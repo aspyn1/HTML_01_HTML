@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08_하이퍼링크 관련 태그</title>
+</head>
+<body>
+    <h1>하이퍼 링크 관련 태그 : a(anchor) 태그</h1>
+
+    <pre>
+        a태그는 현재 HTML문서와 다른 HTML문서를 연결해서
+        페이지 이동을 할 수 있게 하는 기능을 제공.
+
+        이 때, a태그로 감싸진 문자열 == 하이퍼링크
+    </pre>
+
+    <hr>
+
+    <h2>a태그를 이용한 하이퍼링크 구현</h2>
+
+    <u1>
+        <li>
+            <a href="01_안녕.html">01_안녕</a>
+        </li>
+        <li>
+            <a href="07_이미지관련태그.html" target="_blank">07_이미지관련태그</a>
+        </li>
+         <!--target 속성 : 연결된 문서를 어디에서 열 것인지 지정하는 속성
+        기본값 : 같은 탭
+        _blank : 새탭 == 비어있는 탭
+        -->
+
+        <li>
+            <a href="https://www.naver.com/" target="_blank">네이버로 이동</a>
+        </li>
+    </u1>
+
+    <hr>
+
+    <h2>이미지 클릭 시 페이지 이동</h2>
+
+    <a href="https://www.naver.com/" target="_blank">
+        <img src="./images/travle/7.jpg" width="120px">
+    </a>
+
+    <hr>
+
+    <h2>한 페이지 내에서 이동하기</h2>
+
+    <ul id="list">
+        목록
+        <li><a href="#tra1">여행8</a></li>
+        <li><a href="#tra2">여행9</a></li>
+        <li><a href="#tra3">여행10</a></li>
+    </ul>
+
+    <h3 id="tra1">여행8</h3>
+    <img src="./images/travle/8.jpg">
+    <a href="#list">목록으로 이동</a>
+
+    <h3 id="tra2">여행9</h3>
+    <img src="./images/travle/9.jpg">
+    <a href="#list">목록으로 이동</a>
+
+    <h3 id="tra3">여행10</h3>
+    <img src="./images/travle/10.jpg">
+    <a href="#list">목록으로 이동</a>
+
+</body>
+</html>
